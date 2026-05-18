@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-17T20:58:57+08:00",
-  "total": 34,
+  "updated_at": "2026-05-18T09:50:00+08:00",
+  "total": 37,
   "by_category": {
-    "nuclear": 6,
+    "nuclear": 7,
     "thermal": 8,
-    "design": 5,
+    "design": 6,
     "soe": 7,
-    "private": 8
+    "private": 9
   },
   "jobs": [
     {
@@ -565,6 +565,57 @@
       "source": "job.tju.edu.cn",
       "source_url": "https://my.yingjiesheng.com/xjh-006-216-821.html",
       "first_seen": "2026-05-17",
+      "expired": false
+    },
+    {
+      "id": "wuhuan-summer",
+      "category": "design",
+      "type": "internship",
+      "company": "中国五环工程有限公司",
+      "title": "2026暑期实习生(动力工程/静设备方向)",
+      "location": "武汉",
+      "target": "2027届硕士,CET6≥450",
+      "major": "动力工程及工程热物理, 供热供燃气通风及空调工程",
+      "deadline": "2026-05-20",
+      "salary": "实习津贴+优先录用",
+      "link": "mailto:invite@cwcec.com",
+      "source": "eoffcn.com",
+      "source_url": "https://www.eoffcn.com/kszx/detail/2053565.html",
+      "first_seen": "2026-05-18",
+      "expired": false
+    },
+    {
+      "id": "huaneng-nuclear-joint",
+      "category": "nuclear",
+      "type": "joint",
+      "company": "华能核电",
+      "title": "2027届校企联合培养班(石岛湾等)",
+      "location": "山东荣成/石岛湾",
+      "target": "2027届本/硕(硕士咨询确认)",
+      "major": "核工程, 能源动力类, 电气类",
+      "deadline": "2026-06-30",
+      "salary": "央企联培标准",
+      "link": "http://zhaopin.chng.com.cn",
+      "source": "163.com",
+      "source_url": "https://www.163.com/dy/article/KQ80KUBP0514E49C.html",
+      "first_seen": "2026-05-18",
+      "expired": false
+    },
+    {
+      "id": "yuhengxing-cfd",
+      "category": "private",
+      "type": "internship",
+      "company": "北京玉衡星科技",
+      "title": "技术研发实习生(CFD/强化传热/燃烧)",
+      "location": "北京",
+      "target": "2027届硕士/博士",
+      "major": "热能工程, 动力工程, 工程热物理, 流体机械",
+      "deadline": "2026-07-31",
+      "salary": "面议",
+      "link": "mailto:haozhaolong@inheatx.com",
+      "source": "career.nankai.edu.cn",
+      "source_url": "https://career.nankai.edu.cn/correcruit/content/id/115517.html",
+      "first_seen": "2026-05-18",
       "expired": false
     }
   ]
