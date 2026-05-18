@@ -166,6 +166,19 @@
       pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     .toast.show { opacity: 1; }
+
+    .refresh-btn {
+      display: inline-flex; align-items: center; gap: 2px;
+      padding: 5px 12px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.12); color: #fff; font-size: 0.72rem;
+      cursor: pointer; transition: all 0.15s; user-select: none;
+      margin-top: 5px; letter-spacing: 0.3px;
+    }
+    .refresh-btn:active { background: rgba(255,255,255,0.25); }
+    .refresh-btn .icon { transition: transform 0.6s; display: inline-block; }
+    .refresh-btn.spinning .icon { animation: spin 0.8s linear infinite; }
+    .refresh-btn.spinning { opacity: 0.7; pointer-events: none; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   </style>
 </head>
 <body>
@@ -173,6 +186,9 @@
 <div class="header">
   <h1>⚡ 能源动力岗位雷达</h1>
   <div class="updated" id="updateTime">加载中...</div>
+  <button class="refresh-btn" id="refreshBtn" onclick="manualRefresh()">
+    <span class="icon">🔄</span> 刷新数据
+  </button>
   <div class="stats" id="headerStats"></div>
 </div>
 
@@ -316,6 +332,17 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 2000);
 }
 
+function manualRefresh() {
+  const btn = document.getElementById('refreshBtn');
+  btn.classList.add('spinning');
+  btn.innerHTML = '<span class="icon">🔄</span> 刷新中...';
+  showToast('正在获取最新数据...');
+  loadData().finally(() => {
+    btn.classList.remove('spinning');
+    btn.innerHTML = '<span class="icon">🔄</span> 刷新数据';
+  });
+}
+
 async function loadData() {
   try {
     const resp = await fetch('/data/jobs.json', { cache: 'no-cache' });
@@ -324,6 +351,7 @@ async function loadData() {
     jobs = data.jobs;
     document.getElementById('updateTime').textContent = '更新于 '+ (data.updated_at ? data.updated_at.slice(0,16).replace('T',' ') : '未知');
     renderJobs();
+    showToast('数据已更新');
   } catch (err) {
     document.getElementById('jobList').innerHTML =
       '<div class="empty"><span class="icon">⚠️</span>数据加载失败<br><small>请检查网络连接后刷新</small></div>';
