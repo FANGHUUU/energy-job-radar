@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-05-18T09:50:00+08:00",
-  "total": 37,
+  "updated_at": "2026-05-19T10:30:00+08:00",
+  "total": 39,
   "by_category": {
     "nuclear": 7,
-    "thermal": 8,
-    "design": 6,
+    "thermal": 9,
+    "design": 7,
     "soe": 7,
     "private": 9
   },
@@ -616,6 +616,40 @@
       "source": "career.nankai.edu.cn",
       "source_url": "https://career.nankai.edu.cn/correcruit/content/id/115517.html",
       "first_seen": "2026-05-18",
+      "expired": false
+    },
+    {
+      "id": "guiyang-electric-intern",
+      "category": "design",
+      "type": "internship",
+      "company": "中国电建贵阳院",
+      "title": "2026企业开放日暨2027届夏令营",
+      "location": "贵阳",
+      "target": "2027届硕/博,成绩前30%",
+      "major": "能源与动力工程, 储能科学与工程",
+      "deadline": "2026-06-15",
+      "salary": "1000-2000元补贴",
+      "link": "https://gyyhr.powerchina.cn",
+      "source": "jy.xmu.edu.cn",
+      "source_url": "https://jy.xmu.edu.cn/campus/view/id/1001243",
+      "first_seen": "2026-05-19",
+      "expired": false
+    },
+    {
+      "id": "ceec-guangdong-fire-intern",
+      "category": "thermal",
+      "type": "internship",
+      "company": "中国能建广东火电",
+      "title": "能源与动力工程实习岗(电力设计院)",
+      "location": "广州黄埔",
+      "target": "2027届大专及以上",
+      "major": "能源与动力工程, 热能动力工程",
+      "deadline": "2026-07-31",
+      "salary": "5-7K/月+宿舍+班车",
+      "link": "https://shipjd.job1001.com/jobs/53649494.html",
+      "source": "job1001.com",
+      "source_url": "https://shipjd.job1001.com/jobs/53649494.html",
+      "first_seen": "2026-05-19",
       "expired": false
     }
   ]
