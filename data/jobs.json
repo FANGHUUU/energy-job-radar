@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-23T17:00:00+08:00",
-  "total": 44,
+  "updated_at": "2026-05-23T22:00:00+08:00",
+  "total": 47,
   "by_category": {
     "nuclear": 8,
     "thermal": 9,
     "design": 8,
     "soe": 9,
-    "private": 10
+    "private": 13
   },
   "jobs": [
     {
@@ -628,10 +628,10 @@
       "target": "2027届硕/博,成绩前30%",
       "major": "能源与动力工程, 储能科学与工程",
       "deadline": "2026-06-15",
-      "salary": "1000-2000元补贴",
+      "salary": "食宿全包+路费报销+优秀现场签约",
       "link": "https://gyyhr.powerchina.cn",
-      "source": "jy.xmu.edu.cn",
-      "source_url": "https://jy.xmu.edu.cn/campus/view/id/1001243",
+      "source": "91wllm.cn",
+      "source_url": "https://www.91wllm.cn/campusUnion/view/id/997786",
       "first_seen": "2026-05-19",
       "expired": false
     },
@@ -729,6 +729,54 @@
       "salary": "实习补助+免费工作餐+实习鉴定",
       "link": "mailto:xiangguo16@qq.com",
       "source": "ncss.cn",
+      "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "envision-aesc-2027",
+      "category": "private",
+      "type": "internship",
+      "company": "远景动力(AESC)",
+      "title": "2027届全球培训生夏令营暨实习生计划(储能/动力电池)",
+      "location": "上海/江阴/鄂尔多斯/十堰/沧州",
+      "target": "2027届硕士/博士",
+      "major": "储能科学与工程, 能源动力, 电力系统, 材料, 化学",
+      "deadline": "2026-07-05",
+      "salary": "硕士15-25万/年(转正后)",
+      "link": "https://www.aesc-group.com.cn",
+      "source": "sohu.com",
+      "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "xiaopeng-thermal-2027",
+      "category": "private",
+      "type": "internship",
+      "company": "小鹏汽车",
+      "title": "2027届暑期实习生(热管理集成开发/动力三电)",
+      "location": "广州",
+      "target": "2027届硕/本",
+      "major": "热能与动力工程, 制冷与空调, 车辆工程, 机械",
+      "deadline": "2026-08-19",
+      "salary": "异地住宿补贴+提前锁定秋招offer",
+      "link": "https://xiaopeng.jobs.feishu.cn/campus/",
+      "source": "xsjy.whu.edu.cn",
+      "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "sunwoda-xinshaonian-2027",
+      "category": "private",
+      "type": "internship",
+      "company": "欣旺达电子",
+      "title": "\"欣少年\"2027届实习生项目(储能/电池)",
+      "location": "深圳/南京/金华等",
+      "target": "2027届硕/本",
+      "major": "能源动力类, 储能, 电气, 材料",
+      "deadline": "2026-07-31",
+      "salary": "转正实习+竞争力薪酬",
+      "link": "https://wsyu.91wllm.cn/campus/view/id/997196",
+      "source": "wsyu.91wllm.cn",
       "first_seen": "2026-05-23",
       "expired": false
     }
