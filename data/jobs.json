@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-05-19T10:30:00+08:00",
-  "total": 39,
+  "updated_at": "2026-05-23T10:30:00+08:00",
+  "total": 41,
   "by_category": {
     "nuclear": 7,
     "thermal": 9,
-    "design": 7,
-    "soe": 7,
+    "design": 8,
+    "soe": 8,
     "private": 9
   },
   "jobs": [
@@ -582,7 +582,7 @@
       "source": "eoffcn.com",
       "source_url": "https://www.eoffcn.com/kszx/detail/2053565.html",
       "first_seen": "2026-05-18",
-      "expired": false
+      "expired": true
     },
     {
       "id": "huaneng-nuclear-joint",
@@ -650,6 +650,38 @@
       "source": "job1001.com",
       "source_url": "https://shipjd.job1001.com/jobs/53649494.html",
       "first_seen": "2026-05-19",
+      "expired": false
+    },
+    {
+      "id": "sinopec-zhongyuan-energy",
+      "category": "soe",
+      "type": "campus",
+      "company": "中石化中原油田",
+      "title": "新能源技术岗(动力工程/热能/储能)",
+      "location": "河南/四川/山东/内蒙古",
+      "target": "2026届硕士",
+      "major": "动力工程及工程热物理, 能源动力, 热能工程, 储能技术",
+      "deadline": "2026-05-31",
+      "salary": "八险二金+硕士6万人才补贴",
+      "link": "http://job.sinopec.com",
+      "source": "job.sinopec.com",
+      "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "ceec-eastchina-intern",
+      "category": "design",
+      "type": "internship",
+      "company": "中国能建华东电力设计院",
+      "title": "2026暑期实习生(能源动力类)",
+      "location": "上海",
+      "target": "2027届硕士及以上",
+      "major": "能源与动力工程类, 电气工程类",
+      "deadline": "2026-06-30",
+      "salary": "100元/天+工作餐+直通校招面试",
+      "link": "https://campus.niuqizp.com/schedule-7ykU5a5tN.html",
+      "source": "campus.niuqizp.com",
+      "first_seen": "2026-05-23",
       "expired": false
     }
   ]
