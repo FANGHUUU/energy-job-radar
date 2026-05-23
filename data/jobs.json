@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-23T10:30:00+08:00",
-  "total": 41,
+  "updated_at": "2026-05-23T17:00:00+08:00",
+  "total": 44,
   "by_category": {
-    "nuclear": 7,
+    "nuclear": 8,
     "thermal": 9,
     "design": 8,
-    "soe": 8,
-    "private": 9
+    "soe": 9,
+    "private": 10
   },
   "jobs": [
     {
@@ -681,6 +681,54 @@
       "salary": "100元/天+工作餐+直通校招面试",
       "link": "https://campus.niuqizp.com/schedule-7ykU5a5tN.html",
       "source": "campus.niuqizp.com",
+      "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "tsmc-nanjing-intern",
+      "category": "private",
+      "type": "internship",
+      "company": "台积电(南京)有限公司",
+      "title": "2027届暑期实习(设备工程师)",
+      "location": "南京浦口",
+      "target": "2027届硕士",
+      "major": "能源动力类, 机械工程, 电气类, 自动化",
+      "deadline": "2026-07-31",
+      "salary": "180-200元/天+住宿+餐补",
+      "link": "https://m.yingjiesheng.com/job-007-970-851.html",
+      "source": "ncss.cn",
+      "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "cgn-joint-training",
+      "category": "nuclear",
+      "type": "joint",
+      "company": "中广核集团",
+      "title": "2027届联合培养班(西交/重大/华科/山大等10校)",
+      "location": "全国(北京/上海/深圳等)",
+      "target": "2027届本科/硕士(硕士咨询确认)",
+      "major": "核工程, 能源动力, 电气, 机械, 自动化",
+      "deadline": "2026-09-30",
+      "salary": "培养津贴1万/人+工龄计入",
+      "link": "https://career.hebut.edu.cn/correcruit/content/id/77343.html",
+      "source": "career.hebut.edu.cn",
+      "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "sichuan-transport-intern",
+      "category": "soe",
+      "type": "internship",
+      "company": "四川省交科院",
+      "title": "实习生(交能融合/新能源方向)",
+      "location": "成都",
+      "target": "2027/2028届硕博",
+      "major": "能源动力, 新能源, 交通运输工程",
+      "deadline": "2026-12-31",
+      "salary": "实习补助+免费工作餐+实习鉴定",
+      "link": "mailto:xiangguo16@qq.com",
+      "source": "ncss.cn",
       "first_seen": "2026-05-23",
       "expired": false
     }
