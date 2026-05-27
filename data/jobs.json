@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T22:00:00+08:00",
+  "updated_at": "2026-05-25T10:00:00+08:00",
   "total": 47,
   "by_category": {
     "nuclear": 8,
@@ -55,7 +55,7 @@
       "link": "https://hr.cnnc.com.cn",
       "source": "hr.cnnc.com.cn",
       "first_seen": "2026-05-17",
-      "expired": false
+      "expired": true
     },
     {
       "id": "cnnc-star-plan",
