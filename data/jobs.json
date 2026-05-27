@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-05-25T10:00:00+08:00",
-  "total": 47,
+  "updated_at": "2026-05-25T18:00:00+08:00",
+  "total": 48,
   "by_category": {
     "nuclear": 8,
     "thermal": 9,
-    "design": 8,
+    "design": 9,
     "soe": 9,
     "private": 13
   },
@@ -778,6 +778,22 @@
       "link": "https://wsyu.91wllm.cn/campus/view/id/997196",
       "source": "wsyu.91wllm.cn",
       "first_seen": "2026-05-23",
+      "expired": false
+    },
+    {
+      "id": "fedi-fujian-intern",
+      "category": "design",
+      "type": "internship",
+      "company": "中国电建福建院",
+      "title": "2027届暑期实习(电气/机务/AI/碳咨询等15类)",
+      "location": "福州",
+      "target": "2027届硕士及以上",
+      "major": "电气类, 能源动力类, 机务, 土木, AI算法",
+      "deadline": "2026-06-14",
+      "salary": "实习津贴+优先录用",
+      "link": "https://fedi.zhiye.com/",
+      "source": "campus.niuqizp.com",
+      "first_seen": "2026-05-25",
       "expired": false
     }
   ]
