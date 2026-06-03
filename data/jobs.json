@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-03T11:00:00+08:00",
-  "total": 54,
+  "updated_at": "2026-06-03T12:00:00+08:00",
+  "total": 60,
   "by_category": {
     "nuclear": 8,
-    "thermal": 9,
+    "thermal": 10,
     "design": 10,
-    "soe": 12,
-    "private": 15
+    "soe": 15,
+    "private": 17
   },
   "jobs": [
     {
@@ -891,6 +891,102 @@
       "source": "career.shiep.edu.cn",
       "first_seen": "2026-05-28",
       "expired": true
+    },
+    {
+      "id": "csg-digital-2027-intern",
+      "category": "soe",
+      "type": "internship",
+      "company": "南方电网数字电网集团",
+      "title": "2027届暑期实习生(发电业务类/电气类/99人)",
+      "location": "广州/深圳",
+      "target": "2027届硕士及以上",
+      "major": "能源动力, 动力工程及工程热物理, 储能, 新能源, 电气",
+      "deadline": "2026-06-10",
+      "salary": "实习补贴+优秀者直通2027校招+9月发offer",
+      "link": "https://v.wjx.cn/vm/rXpUX8N.aspx#",
+      "source": "career.nankai.edu.cn",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "huadian-2026-batch3",
+      "category": "thermal",
+      "type": "campus",
+      "company": "华电集团(天津/浙江/山东/河北/宁夏等分公司)",
+      "title": "2026届第三批校招(能源动力类)",
+      "location": "天津/杭州/济南/石家庄/银川等多地",
+      "target": "2026届本/硕",
+      "major": "能源动力类, 电气类",
+      "deadline": "2026-06-03",
+      "salary": "央企标准(杭州硕士3万生活补贴+1万/年租房补贴)",
+      "link": "https://rencaishichang.chd.com.cn",
+      "source": "chd.com.cn",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "cgn-newenergy-2026",
+      "category": "soe",
+      "type": "campus",
+      "company": "中广核新能源",
+      "title": "2026届校招(风电/光伏/光热/储能/氢能)",
+      "location": "全国20+省(甘肃/宁夏/内蒙古/江苏/浙江/广西等)",
+      "target": "2025/2026届硕/本",
+      "major": "能源动力类, 新能源工程类, 电气类",
+      "deadline": "2026-07-31",
+      "salary": "七险二金+交通/通讯/远郊/高原/出海补贴",
+      "link": "http://zhaopin.cgnpc.com.cn",
+      "source": "ynu.edu.cn",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "ctg-newenergy-2026",
+      "category": "soe",
+      "type": "campus",
+      "company": "三峡新能源",
+      "title": "2026届校招(海上风电/光伏/抽蓄/储能/氢能/约200人)",
+      "location": "全国(沿海风电基地+内陆光伏基地)",
+      "target": "2026届硕/本",
+      "major": "能源动力类, 新能源, 电气, 机械",
+      "deadline": "2026-07-31",
+      "salary": "七险二金+补充医疗+员工宿舍",
+      "link": "https://campus.chinahr.com/pages/sanxia",
+      "source": "campus.chinahr.com",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "goldwind-2026-campus",
+      "category": "private",
+      "type": "campus",
+      "company": "金风科技",
+      "title": "2026届校招(风电装备/储能研发/能源服务)",
+      "location": "北京/无锡/新疆/温州/西安等",
+      "target": "2026届硕/本",
+      "major": "能源动力类, 新能源, 机械, 电气",
+      "deadline": "2026-07-31",
+      "salary": "六险一金+宿舍+班车",
+      "link": "https://goldwind.zhiye.com",
+      "source": "cqbys.com",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "sungrow-2027-intern",
+      "category": "private",
+      "type": "internship",
+      "company": "阳光电源",
+      "title": "2027届实习(光伏逆变器/储能/氢能系统)",
+      "location": "合肥",
+      "target": "2027届硕/本",
+      "major": "能源动力类, 新能源, 电力电子",
+      "deadline": "2026-07-31",
+      "salary": "5500-6500元/月+免费三餐+宿舍+15薪转正",
+      "link": "https://sungrow.zhiye.com",
+      "source": "xihang.com.cn",
+      "first_seen": "2026-06-03",
+      "expired": false
     }
   ]
 }
