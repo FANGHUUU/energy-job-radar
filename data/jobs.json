@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-28T10:00:00+08:00",
-  "total": 50,
+  "updated_at": "2026-06-03T11:00:00+08:00",
+  "total": 54,
   "by_category": {
     "nuclear": 8,
     "thermal": 9,
     "design": 10,
-    "soe": 9,
-    "private": 14
+    "soe": 12,
+    "private": 15
   },
   "jobs": [
     {
@@ -39,7 +39,7 @@
       "link": "https://campus.51job.com/snerdiintern",
       "source": "campus.51job.com",
       "first_seen": "2026-05-17",
-      "expired": false
+      "expired": true
     },
     {
       "id": "cnnc-nuclear-power-intern",
@@ -264,7 +264,7 @@
       "link": "mailto:ahyjobs@ahedi.com.cn",
       "source": "ahedi.ceec.net.cn",
       "first_seen": "2026-05-17",
-      "expired": false,
+      "expired": true,
       "source_url": "https://mp.weixin.qq.com/s/SneTPF9M_MQszDnEUT9jiQ"
     },
     {
@@ -666,7 +666,7 @@
       "link": "http://job.sinopec.com",
       "source": "job.sinopec.com",
       "first_seen": "2026-05-23",
-      "expired": false
+      "expired": true
     },
     {
       "id": "ceec-eastchina-intern",
@@ -797,6 +797,70 @@
       "expired": false
     },
     {
+      "id": "jinneng-2026-campus",
+      "category": "soe",
+      "type": "campus",
+      "company": "晋能控股集团",
+      "title": "动力工程类岗位(仅面试/4000人规模)",
+      "location": "山西",
+      "target": "2025/2026届未就业毕业生",
+      "major": "动力工程类, 能源动力类",
+      "deadline": "2026-06-11",
+      "salary": "国企标准(燃煤/光伏/风电多元发电)",
+      "link": "http://www.jnkgjtnews.com",
+      "source": "jnkgjtnews.com",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "shanghai-electric-summer-camp",
+      "category": "soe",
+      "type": "internship",
+      "company": "上海电气电站集团",
+      "title": "\"追电逐梦行\"暑期夏令营(2027届提前批)",
+      "location": "上海/南京",
+      "target": "2027届硕士",
+      "major": "能源动力类, 电气类, 机械类",
+      "deadline": "2026-06-25",
+      "salary": "深度参访+直通校招终面+创新课题挑战赛",
+      "link": "http://sec.hotjob.cn",
+      "source": "sec.hotjob.cn",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "sany-2027-early",
+      "category": "private",
+      "type": "campus",
+      "company": "三一集团",
+      "title": "2027届校招提前批(热管理/动力系统/新能源)",
+      "location": "北京/长沙/上海/西安等多地",
+      "target": "2027届硕/本",
+      "major": "能源动力类, 热管理, 新能源类",
+      "deadline": "2026-06-24",
+      "salary": "行业竞争力薪酬",
+      "link": "https://sany.zhiye.com/campus/jobs",
+      "source": "sany.zhiye.com",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
+      "id": "cetc-bluetech-thermal",
+      "category": "soe",
+      "type": "campus",
+      "company": "中电科蓝天科技",
+      "title": "热/流体/多物理场仿真研发岗",
+      "location": "天津",
+      "target": "2026届硕/博",
+      "major": "动力工程及工程热物理, 热能工程, 流体机械",
+      "deadline": "2026-07-31",
+      "salary": "六险二金+天津落户+免费公寓",
+      "link": "https://cetcbluetech.zhaopin.com",
+      "source": "sa.zgsydw.com",
+      "first_seen": "2026-06-03",
+      "expired": false
+    },
+    {
       "id": "sedc-sichuan-intern",
       "category": "design",
       "type": "internship",
@@ -826,7 +890,7 @@
       "link": "https://career.shiep.edu.cn/news/view/aid/301086/tag/tzgg",
       "source": "career.shiep.edu.cn",
       "first_seen": "2026-05-28",
-      "expired": false
+      "expired": true
     }
   ]
 }
