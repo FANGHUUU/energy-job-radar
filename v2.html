@@ -30,6 +30,9 @@
       --st-interview: #f59e0b;
       --st-offer: #22c55e;
       --st-rejected: #ef4444;
+      --type-early: #dc2626;
+      --source-official: #1F3864;
+      --source-platform: #94a3b8;
       --nuclear: #22c55e;
       --thermal: #f97316;
       --design: #8b5cf6;
@@ -272,6 +275,9 @@
     .badge.st-offer    { background: #dcfce7; color: #166534; }
     .badge.st-rejected { background: #fee2e2; color: #991b1b; }
     .badge.has-note { background: #fef3c7; color: #92400e; }
+    .badge.early_batch { background: #fee2e2; color: #991b1b; font-weight: 700; }
+    .badge.source-official { background: #dbeafe; color: #1e40af; }
+    .badge.source-platform { background: #f1f5f9; color: #64748b; }
 
     .card-title { font-size: 0.78rem; margin: 4px 0 2px; font-weight: 600; }
     .card-meta { font-size: 0.66rem; color: var(--sub); display: flex; flex-wrap: wrap; gap: 2px 10px; }
@@ -464,6 +470,7 @@
     <div class="panel-section" id="priorityFilters"></div>
     <div class="panel-section" id="categoryFilters"></div>
     <div class="panel-section" id="statusFilters"></div>
+    <div class="panel-section" id="sourceFilters"></div>
     <div class="panel-section" id="cityFilters"></div>
   </aside>
 
@@ -545,6 +552,7 @@ const SCORE = {
       if (days >= 0 && days <= 7) b += 5;
       else if (days > 7 && days <= 14) b += 3;
     }
+    if (j.type === 'early_batch') b += 8;
     const t = (j.salary||'') + (j.title||'');
     if (/直通|转正|优先录用|签约|提前锁定/.test(t)) b += 5;
     if (/住宿|安家费|购房/.test(j.salary||'')) b += 3;
@@ -564,7 +572,8 @@ const SCORE = {
 
 const CATS = ['nuclear','thermal','design','soe','private'];
 const catLabels = { nuclear:'核电', thermal:'水火电', design:'设计院', soe:'国央企', private:'民企' };
-const typeLabels = { internship:'实习', campus:'校招', joint:'联培', social:'社招' };
+const typeLabels = { internship:'实习', campus:'校招', joint:'联培', social:'社招', early_batch:'提前批' };
+const sourceTypeLabels = { official:'🏢 官网', platform:'🌐 平台' };
 const statusLabels = { none:'未投递', applied:'已投递', interview:'面试中', offer:'Offer', rejected:'已拒绝' };
 const tierLabels = { S:'S 级 · 优先投递', A:'A 级 · 重点投递', B:'B 级 · 值得投递', C:'C 级 · 非优先' };
 
@@ -579,12 +588,27 @@ let filters = {
   cities: new Set(),
   priorities: new Set(),
   statuses: new Set(),
+  sourceTypes: new Set(),
   deadline: 'all',
   onlyChanges: false
 };
 
 function getStatus(jobId) {
   return (LS.get('status', {}))[jobId] || 'none';
+}
+
+function getSourceType(j) {
+  const link = (j.link || '').toLowerCase();
+  const officialDomains = [
+    'zhiye.com', 'hotjob.cn', 'zhaopin.', 'iguopin.com',
+    '51job.com', 'zp-pt.com', 'zhaopin.sgcc.com.cn', 'zhaopin.csg.cn',
+    'job.sinopec.com', 'zhaopin.cnpc.com.cn', 'zhaopin.powerchina.cn',
+    'ceec.iguopin.com', 'ncss.cn', 'job.ncepu.edu.cn'
+  ];
+  for (const d of officialDomains) {
+    if (link.includes(d)) return 'official';
+  }
+  return 'platform';
 }
 
 function detectChanges(jobs) {
@@ -630,6 +654,7 @@ function applyFilters() {
   }
   if (filters.priorities.size > 0) result = result.filter(j => filters.priorities.has(j._score.tier));
   if (filters.statuses.size > 0) result = result.filter(j => filters.statuses.has(getStatus(j.id)));
+  if (filters.sourceTypes.size > 0) result = result.filter(j => filters.sourceTypes.has(j._sourceType));
   if (filters.deadline !== 'all') {
     result = result.filter(j => {
       if (!j.deadline) return false;
@@ -693,6 +718,11 @@ function renderFilterQuick() {
   for (const [k,v] of dls) {
     html += `<span class="pill${filters.deadline===k?' active':''}" data-f="deadline" data-v="${k}">${v}</span>`;
   }
+  html += '<span style="width:6px"></span>';
+  html += `<span class="pill${filters.sourceTypes.size===0?' active':''}" data-f="sourceType" data-v="all">全部来源</span>`;
+  for (const [k,v] of Object.entries(sourceTypeLabels)) {
+    html += `<span class="pill${filters.sourceTypes.has(k)?' active':''}" data-f="sourceType" data-v="${k}">${v}</span>`;
+  }
   html += '<span style="flex:1"></span>';
   html += `<span class="pill${filters.onlyChanges?' active':''}" data-f="onlyChanges" data-v="toggle">🔔 仅看变化</span>`;
   html += '<span class="mobile-filter-btn" id="mobileFilterBtn">☰ 筛选</span>';
@@ -734,6 +764,15 @@ function renderLeftPanel() {
   }
   document.getElementById('statusFilters').innerHTML = html;
 
+  const srcCounts = { official: 0, platform: 0 };
+  for (const j of filtered) srcCounts[j._sourceType]++;
+  html = '<h3>来源</h3>';
+  for (const [k,v] of Object.entries(sourceTypeLabels)) {
+    const act = filters.sourceTypes.has(k);
+    html += `<div class="filter-item${act?' active':''}" data-f="sourceType" data-v="${k}"><span>${v}</span><span class="badge-count">${srcCounts[k]}</span></div>`;
+  }
+  document.getElementById('sourceFilters').innerHTML = html;
+
   const cities = new Map();
   for (const j of filtered) {
     const loc = j.location || '';
@@ -764,6 +803,7 @@ function renderJobList() {
   for (const c of filters.cities) addChip(c, ()=>{ filters.cities.delete(c); renderAll(); });
   for (const p of filters.priorities) addChip(p+'级', ()=>{ filters.priorities.delete(p); renderAll(); });
   for (const s of filters.statuses) addChip(statusLabels[s], ()=>{ filters.statuses.delete(s); renderAll(); });
+  for (const s of filters.sourceTypes) addChip(sourceTypeLabels[s], ()=>{ filters.sourceTypes.delete(s); renderAll(); });
   if (filters.deadline !== 'all') {
     const m = { week:'本周截止', month:'本月截止', nextMonth:'下月截止' };
     addChip(m[filters.deadline], ()=>{ filters.deadline='all'; renderAll(); });
@@ -806,8 +846,10 @@ function renderCard(j) {
       <span class="card-company">${highlightText(j.company)}</span>
       <span class="card-badges">
         <span class="badge p-${t.toLowerCase()}">${t}</span>
+        ${j.type==='early_batch'?'<span class="badge early_batch">提前批</span>':''}
         <span class="badge ${j.type}">${typeLabels[j.type]||j.type}</span>
         ${st!=='none'?`<span class="badge st-${st}">${statusLabels[st]}</span>`:''}
+        <span class="badge source-${j._sourceType}">${sourceTypeLabels[j._sourceType]}</span>
         ${c.newIds.has(j.id)?'<span class="badge new">🆕</span>':''}
         ${c.changedIds.has(j.id)?'<span class="badge changed">⚡</span>':''}
         ${c.urgentIds.has(j.id)?'<span class="badge urgent">⚠️</span>':''}
@@ -886,7 +928,7 @@ function renderDetail(id) {
     <div class="detail-history">
       <h3>收录信息</h3>
       <div class="history-item">首次收录: ${j.first_seen||'未知'}</div>
-      <div class="history-item">来源: ${j.source||'未知'}</div>
+      <div class="history-item">来源: ${j.source||'未知'} <span class="badge source-${j._sourceType}" style="font-size:0.65rem">${sourceTypeLabels[j._sourceType]}</span></div>
     </div>
   `;
 }
@@ -946,6 +988,8 @@ document.getElementById('filterQuick').addEventListener('click', e => {
     filters.deadline = v;
   } else if (f === 'onlyChanges') {
     filters.onlyChanges = !filters.onlyChanges;
+  } else if (f === 'sourceType') {
+    v === 'all' ? filters.sourceTypes.clear() : (filters.sourceTypes.has(v) ? filters.sourceTypes.delete(v) : filters.sourceTypes.add(v));
   }
   renderAll();
 });
@@ -955,7 +999,7 @@ document.getElementById('panelLeft').addEventListener('click', e => {
   const el = e.target.closest('[data-f]');
   if (!el) return;
   const f = el.dataset.f, v = decodeURIComponent(el.dataset.v);
-  const sets = { priority: filters.priorities, category: filters.categories, status: filters.statuses, city: filters.cities };
+  const sets = { priority: filters.priorities, category: filters.categories, status: filters.statuses, sourceType: filters.sourceTypes, city: filters.cities };
   if (sets[f]) { sets[f].has(v) ? sets[f].delete(v) : sets[f].add(v); }
   renderAll();
 });
@@ -1008,7 +1052,7 @@ async function loadData() {
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const data = await resp.json();
     jobs = data.jobs;
-    scoredJobs = jobs.map(j => ({ ...j, _score: SCORE.compute(j) }));
+    scoredJobs = jobs.map(j => ({ ...j, _score: SCORE.compute(j), _sourceType: getSourceType(j) }));
     window._changes = detectChanges(jobs);
     document.getElementById('updateTime').textContent =
       '更新于 ' + (data.updated_at ? data.updated_at.slice(0,16).replace('T',' ') : '未知');
