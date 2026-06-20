@@ -485,7 +485,7 @@
     {
       "id": "huaneng-nuclear-joint",
       "category": "nuclear",
-      "type": "joint",
+      "type": "early_batch",
       "company": "华能核电",
       "title": "2027届校企联合培养班(石岛湾等)",
       "location": "山东荣成/石岛湾",
@@ -585,7 +585,7 @@
     {
       "id": "cgn-joint-training",
       "category": "nuclear",
-      "type": "joint",
+      "type": "early_batch",
       "company": "中广核集团",
       "title": "2027届联合培养班(西交/重大/华科/山大等10校)",
       "location": "全国(北京/上海/深圳等)",
@@ -617,7 +617,7 @@
     {
       "id": "envision-aesc-2027",
       "category": "private",
-      "type": "internship",
+      "type": "early_batch",
       "company": "远景动力(AESC)",
       "title": "2027届全球培训生夏令营暨实习生计划(储能/动力电池)",
       "location": "上海/江阴/鄂尔多斯/十堰/沧州",
@@ -681,7 +681,7 @@
     {
       "id": "shanghai-electric-summer-camp",
       "category": "soe",
-      "type": "internship",
+      "type": "early_batch",
       "company": "上海电气电站集团",
       "title": "\"追电逐梦行\"暑期夏令营(2027届提前批)",
       "location": "上海/南京",
@@ -697,7 +697,7 @@
     {
       "id": "sany-2027-early",
       "category": "private",
-      "type": "campus",
+      "type": "early_batch",
       "company": "三一集团",
       "title": "2027届校招提前批(热管理/动力系统/新能源)",
       "location": "北京/长沙/上海/西安等多地",
@@ -809,7 +809,7 @@
     {
       "id": "cctc-thermal-2027",
       "category": "private",
-      "type": "campus",
+      "type": "early_batch",
       "company": "潮州三环集团",
       "title": "2027届提前批(热工模拟设计/仿真/结构)",
       "location": "潮州/深圳/成都/德阳/南充/苏州",
@@ -889,7 +889,7 @@
     {
       "id": "ceec-swepdi-chuying",
       "category": "design",
-      "type": "internship",
+      "type": "early_batch",
       "company": "中国能建西南电力设计院",
       "title": "\"储英计划\"暑期实习生(8月考核发提前批offer)",
       "location": "成都",
@@ -923,7 +923,7 @@
     {
       "id": "shanghai-electric-elite-2027",
       "category": "soe",
-      "type": "internship",
+      "type": "early_batch",
       "company": "上海电气集团",
       "title": "2027届暑期精英训练营(提前锁定秋招offer)",
       "location": "上海",
