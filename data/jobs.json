@@ -676,7 +676,7 @@
       "link": "https://fedi.zhiye.com/",
       "source": "campus.niuqizp.com",
       "first_seen": "2026-05-25",
-      "expired": false
+      "expired": true
     },
     {
       "id": "shanghai-electric-summer-camp",
@@ -724,7 +724,7 @@
       "link": "https://sedc2026.zhaopin.com",
       "source": "offcn.com",
       "first_seen": "2026-05-28",
-      "expired": false
+      "expired": true
     },
     {
       "id": "lingang-energy-intern",
@@ -788,7 +788,7 @@
       "link": "https://hmgc.hotjob.cn",
       "source": "job.dlut.edu.cn",
       "first_seen": "2026-06-04",
-      "expired": false
+      "expired": true
     },
     {
       "id": "nwh-summer-intern",
