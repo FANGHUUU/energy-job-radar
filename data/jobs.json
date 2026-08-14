@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-07-10T20:00:00+08:00",
-  "total": 70,
+  "updated_at": "2026-08-14T08:03:00+08:00",
+  "total": 73,
   "by_category": {
     "nuclear": 10,
     "thermal": 14,
     "design": 14,
-    "soe": 13,
+    "soe": 16,
     "private": 19
   },
   "jobs": [
@@ -119,7 +119,7 @@
       "link": "http://zhaopin.chnenergy.com.cn",
       "source": "zhaopin.chnenergy.com.cn",
       "first_seen": "2026-05-17",
-      "expired": false
+      "expired": true
     },
     {
       "id": "huayuan-pump-storage",
@@ -157,29 +157,29 @@
     {
       "id": "huadian-young-talents",
       "category": "thermal",
-      "type": "campus",
+      "type": "early_batch",
       "company": "华电集团",
-      "title": "青年骏才计划/电厂运维技术员",
+      "title": "青年骏才专项(提前批,985/211及QS前30硕博)",
       "location": "全国(金昌/武威有项目)",
-      "target": "2027届硕士",
+      "target": "2027届硕/博(985/211/QSTop30,需CET6)",
       "major": "能源动力类(含氢能/储能)",
-      "deadline": "2026-11-30",
+      "deadline": "2026-10-31",
       "salary": "20万起/年",
-      "link": "http://hd.zp-pt.com",
-      "source": "hd.zp-pt.com",
+      "link": "https://rencaishichang.chd.com.cn",
+      "source": "chd.com.cn",
       "first_seen": "2026-05-17",
       "expired": false
     },
     {
       "id": "datang-youcai",
       "category": "thermal",
-      "type": "campus",
+      "type": "early_batch",
       "company": "大唐集团",
-      "title": "优才计划/运行值班员",
+      "title": "优才计划提前批(重点院校硕博)",
       "location": "全国(甘肃8地州市)",
       "target": "2027届硕士",
       "major": "热能动力类",
-      "deadline": "2026-10-31",
+      "deadline": "2026-09-30",
       "salary": "约20万/年+3万入职补贴",
       "link": "https://zhaopin.china-cdt.com",
       "source": "zhaopin.china-cdt.com",
@@ -395,7 +395,7 @@
       "source": "xsjy.whu.edu.cn",
       "source_url": "https://xsjy.whu.edu.cn/frontpage/whu/html/recruitmentinfoForm.html?positionDetailId=1318225e2aae4f979e586dd15ea0c53f",
       "first_seen": "2026-05-17",
-      "expired": false
+      "expired": true
     },
     {
       "id": "midea-summer-intern",
@@ -446,7 +446,7 @@
       "source": "job.tju.edu.cn",
       "source_url": "https://job.tju.edu.cn/company/index/id/1970.html",
       "first_seen": "2026-05-17",
-      "expired": false
+      "expired": true
     },
     {
       "id": "dongfang-intern",
@@ -463,7 +463,7 @@
       "source": "campus.niuqizp.com",
       "source_url": "https://campus.niuqizp.com/schedule-7msm5znLN.html",
       "first_seen": "2026-05-17",
-      "expired": false
+      "expired": true
     },
     {
       "id": "wuhuan-summer",
@@ -514,7 +514,7 @@
       "source": "career.nankai.edu.cn",
       "source_url": "https://career.nankai.edu.cn/correcruit/content/id/115517.html",
       "first_seen": "2026-05-18",
-      "expired": false
+      "expired": true
     },
     {
       "id": "guiyang-electric-intern",
@@ -548,7 +548,7 @@
       "source": "job1001.com",
       "source_url": "https://shipjd.job1001.com/jobs/53649494.html",
       "first_seen": "2026-05-19",
-      "expired": false
+      "expired": true
     },
     {
       "id": "ceec-eastchina-intern",
@@ -660,7 +660,7 @@
       "link": "https://wsyu.91wllm.cn/campus/view/id/997196",
       "source": "wsyu.91wllm.cn",
       "first_seen": "2026-05-23",
-      "expired": false
+      "expired": true
     },
     {
       "id": "fedi-fujian-intern",
@@ -772,7 +772,7 @@
       "link": "https://sungrow.zhiye.com",
       "source": "xihang.com.cn",
       "first_seen": "2026-06-03",
-      "expired": false
+      "expired": true
     },
     {
       "id": "hmtc-2026-summer",
@@ -836,7 +836,7 @@
       "link": "https://enn.zhiye.com/Campus",
       "source": "career.nankai.edu.cn",
       "first_seen": "2026-06-04",
-      "expired": false
+      "expired": true
     },
     {
       "id": "ahedi-2027-summer",
@@ -918,7 +918,7 @@
       "source": "hdec.zhiye.com",
       "source_url": "http://www.offcn.com/gqzp/2026/0608/242567.html",
       "first_seen": "2026-06-20",
-      "expired": false
+      "expired": true
     },
     {
       "id": "shanghai-electric-elite-2027",
@@ -984,19 +984,19 @@
       "link": "https://spic2026.iguopin.com",
       "source": "iguopin.com",
       "first_seen": "2026-07-10",
-      "expired": false
+      "expired": true
     },
     {
       "id": "ceec-northwest-2027",
       "category": "design",
-      "type": "early_batch",
+      "type": "campus",
       "company": "中国能建西北电力设计院",
-      "title": "2027届暑期实习及校招开放日",
+      "title": "2027届秋季校园招聘(热能动力设计员岗,招50人)",
       "location": "西安",
       "target": "2027届硕士",
-      "major": "能源动力, 电气, 土木, 控制, 化学",
-      "deadline": "2026-08-31",
-      "salary": "实习优秀者直通秋招终面/优先录用",
+      "major": "能源与动力工程(硕士), 热能动力, 工程热物理, 新能源储能(博士)",
+      "deadline": "2026-09-07",
+      "salary": "约16.7k/月(约20万/年)",
       "link": "https://ideal.51job.com/xbyzp/",
       "source": "51job.com",
       "first_seen": "2026-07-10",
@@ -1007,7 +1007,7 @@
       "category": "nuclear",
       "type": "campus",
       "company": "中广核集团",
-      "title": "2027届秋季校园招聘(提前关注通道)",
+      "title": "2027届秋季校园招聘(提前批8-9月,正式批10-11月)",
       "location": "深圳/阳江/大亚湾/台山/红沿河/防城港/惠州/浙江/陆丰",
       "target": "2027届本/硕/博",
       "major": "能源与动力工程, 核工程类, 电气类, 机械类",
@@ -1023,11 +1023,11 @@
       "category": "thermal",
       "type": "campus",
       "company": "国家能源集团",
-      "title": "2027届校园招聘(预计9月启动, 提前关注)",
+      "title": "2027届校园招聘(预计9月中旬公告,招6400余人)",
       "location": "全国",
       "target": "2027届本/硕/博",
       "major": "能源与动力工程, 电气工程, 自动化, 机械, 新能源",
-      "deadline": "2026-12-31",
+      "deadline": "2026-10-24",
       "salary": "硕士15-20万/年(参考往年)",
       "link": "https://zhaopin.chnenergy.com.cn",
       "source": "zhaopin.chnenergy.com.cn",
@@ -1076,7 +1076,7 @@
       "target": "2027届本/硕/博",
       "major": "核工程类, 能源动力类, 电气类, 机械类",
       "deadline": "2026-09-30",
-      "salary": "硕士第一年18-25万",
+      "salary": "硕士40万起(星原)/第一年18-25万(核星)",
       "link": "https://cnnc.zhiye.com",
       "source": "cnnc.zhiye.com",
       "first_seen": "2026-07-10",
@@ -1139,11 +1139,59 @@
       "location": "成都/德阳/自贡/广州",
       "target": "2027届本/硕/博",
       "major": "能源动力, 机械, 电气, 材料, 控制",
-      "deadline": "2026-09-30",
+      "deadline": "2026-09-21",
       "salary": "硕士18-25万, 博士30万+",
-      "link": "https://dec2026.iguopin.com",
-      "source": "iguopin.com",
+      "link": "https://zhaopin.dongfang.com",
+      "source": "dongfang.com",
       "first_seen": "2026-07-10",
+      "expired": false
+    },
+    {
+      "id": "aecc-caec-2027-early",
+      "category": "soe",
+      "type": "early_batch",
+      "company": "中国航发商用航空发动机(航发商发)",
+      "title": "2027届提前批(气动传热与燃烧/结构强度/系统总体等)",
+      "location": "上海闵行/临港",
+      "target": "2027届硕/博(研究生优先)",
+      "major": "动力工程及工程热物理, 航空宇航推进, 机械, 材料",
+      "deadline": "2026-09-30",
+      "salary": "市场竞争薪酬+人才公寓+安家费;博士引才10万/年×5年",
+      "link": "https://aecc.iguopin.com",
+      "source": "iguopin.com",
+      "first_seen": "2026-08-14",
+      "expired": false
+    },
+    {
+      "id": "csg-2027-campus",
+      "category": "soe",
+      "type": "campus",
+      "company": "南方电网",
+      "title": "2027届校园招聘(提前批9月宣讲,正式批9-10月公告)",
+      "location": "广东/广西/云南/贵州/海南",
+      "target": "2027届硕/本(硕士≤28岁)",
+      "major": "能源动力类, 电气类, 新能源, 储能, 抽水蓄能",
+      "deadline": "2026-12-31",
+      "salary": "参照往年硕士20万+",
+      "link": "https://zhaopin.csg.cn",
+      "source": "zhaopin.csg.cn",
+      "first_seen": "2026-08-14",
+      "expired": false
+    },
+    {
+      "id": "sgcc-2027-campus",
+      "category": "soe",
+      "type": "campus",
+      "company": "国家电网",
+      "title": "2027届校园招聘(提前批9月启动,一批11月为主)",
+      "location": "全国各省电力公司",
+      "target": "2027届本/硕/博(硕士≤28岁)",
+      "major": "能源动力类(其他工学类), 电气类",
+      "deadline": "2026-12-31",
+      "salary": "参照往年硕士20万+",
+      "link": "https://zhaopin.sgcc.com.cn",
+      "source": "zhaopin.sgcc.com.cn",
+      "first_seen": "2026-08-14",
       "expired": false
     }
   ]
