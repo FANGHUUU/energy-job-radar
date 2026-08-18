@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-15T08:03:00+08:00",
-  "total": 79,
+  "updated_at": "2026-08-18T08:03:00+08:00",
+  "total": 86,
   "by_category": {
     "nuclear": 10,
-    "thermal": 14,
+    "thermal": 15,
     "design": 14,
-    "soe": 17,
-    "private": 24
+    "soe": 21,
+    "private": 26
   },
   "jobs": [
     {
@@ -1048,7 +1048,7 @@
       "link": "https://hunter.bjx.com.cn/zhuanti/?industry=100",
       "source": "hr.bjx.com.cn",
       "first_seen": "2026-07-10",
-      "expired": false
+      "expired": true
     },
     {
       "id": "guangdong-energy-2027",
@@ -1288,6 +1288,118 @@
       "link": "https://m.yingjiesheng.com/job-008-027-042.html",
       "source": "yingjiesheng.com",
       "first_seen": "2026-08-15",
+      "expired": false
+    },
+    {
+      "id": "spic-2027-campus",
+      "category": "thermal",
+      "type": "campus",
+      "company": "国家电投集团",
+      "title": "2027届秋季校园招聘(主通道)",
+      "location": "全国",
+      "target": "2027届本/硕/博",
+      "major": "能源动力类, 电气类, 核工程类, 新能源, 储能",
+      "deadline": "2026-08-31",
+      "salary": "硕士12-18万/年",
+      "link": "https://spic2026.iguopin.com",
+      "source": "iguopin.com",
+      "first_seen": "2026-08-16",
+      "expired": false
+    },
+    {
+      "id": "huawei-digital-power-thermal",
+      "category": "private",
+      "type": "campus",
+      "company": "华为数字能源",
+      "title": "热设计工程师/数据中心暖通工程师(液冷/CFD)",
+      "location": "深圳/东莞/上海",
+      "target": "2027届硕士/博士",
+      "major": "动力工程及工程热物理, 热能工程, 制冷与低温, 暖通",
+      "deadline": "2026-09-30",
+      "salary": "24-40K×16薪",
+      "link": "https://www.nowcoder.com/jobs/detail/458187",
+      "source": "nowcoder.com",
+      "first_seen": "2026-08-16",
+      "expired": false
+    },
+    {
+      "id": "csic-711-2027",
+      "category": "soe",
+      "type": "campus",
+      "company": "中国船舶集团第七一一研究所(711所)",
+      "title": "2027届校园招聘(柴油机/燃气轮机研发)",
+      "location": "上海",
+      "target": "2027届硕士/博士",
+      "major": "动力工程及工程热物理, 热能工程, 机械工程, 内燃机",
+      "deadline": "2026-12-31",
+      "salary": "六险三金+央企研究院待遇",
+      "link": "https://zggwy.com/zhaokao/628639.html",
+      "source": "zggwy.com",
+      "first_seen": "2026-08-16",
+      "expired": false
+    },
+    {
+      "id": "cnpc-2027-campus",
+      "category": "soe",
+      "type": "campus",
+      "company": "中国石油天然气集团",
+      "title": "2027届校园招聘(预计9月中旬启动)",
+      "location": "全国",
+      "target": "2027届本/硕/博",
+      "major": "能源动力类, 石油工程, 化学工程, 机械, 电气",
+      "deadline": "2026-10-31",
+      "salary": "央企标准",
+      "link": "https://zhaopin.cnpc.com.cn",
+      "source": "zhaopin.cnpc.com.cn",
+      "first_seen": "2026-08-16",
+      "expired": false
+    },
+    {
+      "id": "sinopec-2027-campus",
+      "category": "soe",
+      "type": "campus",
+      "company": "中国石油化工集团",
+      "title": "2027届校园招聘(预计9月下旬启动)",
+      "location": "全国",
+      "target": "2027届本/硕/博",
+      "major": "能源动力类, 化学工程, 机械, 电气",
+      "deadline": "2026-11-15",
+      "salary": "央企标准",
+      "link": "http://job.sinopec.com",
+      "source": "job.sinopec.com",
+      "first_seen": "2026-08-16",
+      "expired": false
+    },
+    {
+      "id": "cnooc-2027-campus",
+      "category": "soe",
+      "type": "campus",
+      "company": "中国海洋石油集团",
+      "title": "2027届校园招聘(预计9月启动)",
+      "location": "全国(天津/上海/深圳/湛江等)",
+      "target": "2027届本/硕/博",
+      "major": "能源动力类, 海洋工程, 石油工程, 机械, 电气",
+      "deadline": "2026-10-31",
+      "salary": "央企标准",
+      "link": "https://cosl.zhiye.com",
+      "source": "cosl.zhiye.com",
+      "first_seen": "2026-08-16",
+      "expired": false
+    },
+    {
+      "id": "envision-energy-2027",
+      "category": "private",
+      "type": "campus",
+      "company": "远景能源",
+      "title": "2027届全球校园招聘(13大类140+岗位)",
+      "location": "上海/无锡/南京等",
+      "target": "2027届本/硕/博",
+      "major": "能源动力类, 新能源, 储能, 电气, 机械",
+      "deadline": "2026-10-31",
+      "salary": "10-15K/月",
+      "link": "https://job.xjtu.edu.cn/frontpage/xjtu/html/newsDetail.html?id=a194bf54f3f24bbb97a021bc33a456ad",
+      "source": "job.xjtu.edu.cn",
+      "first_seen": "2026-08-17",
       "expired": false
     }
   ]
